@@ -95,7 +95,7 @@ main {
 .sect-3 {
   position: relative;
   background-image: url("../img/sect-3.jpg");
-  background-position: center;
+  background-position: right;
   background-size: cover;
   min-height: 50vh;
   display: -webkit-box;
@@ -275,17 +275,17 @@ main {
 }
 
 .bg-active {
-  -webkit-clip-path: circle(140.9% at 0 0);
-          clip-path: circle(140.9% at 0 0);
+  -webkit-clip-path: circle(140.9% at 0 0) !important;
+          clip-path: circle(140.9% at 0 0) !important;
 }
 
 .content-active {
-  -webkit-clip-path: circle(141.1% at 100% 100%);
-          clip-path: circle(141.1% at 100% 100%);
+  -webkit-clip-path: circle(141.1% at 100% 100%) !important;
+          clip-path: circle(141.1% at 100% 100%) !important;
 }
 
 .sect-active {
-  z-index: 12;
+  z-index: 12 !important;
 }
 
 @media (max-width: 236px) {
