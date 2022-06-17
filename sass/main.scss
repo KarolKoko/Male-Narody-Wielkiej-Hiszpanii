@@ -1,0 +1,243 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Merriweather', serif;
+    width: 100%;
+    height: 100vh;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.group-1{
+    display: flex;
+    flex-direction: column;
+    min-width: 236px;
+    width: 50%;
+    justify-content: stretch;
+}
+
+.group-2{
+    display: flex;
+    flex-direction: column;
+    min-width: 236px;
+    width: 50%;
+    justify-content: stretch;
+}
+
+.sect-1{
+    position: relative;
+    background-image: url("../img/sect-1.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect-2{
+    position: relative;
+    background-image: url("../img/sect-2.png");
+    background-position: center;
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect-3{
+    position: relative;
+    background-image: url("../img/sect-3.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect-4{
+    position: relative;
+    background-image: url("../img/sect-4.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.466);
+    clip-path: circle(0.2% at 0 0);
+    transition: clip-path .3s;
+}
+
+.content{
+    position: relative;
+    z-index: 10;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 95%;
+    border: 3px solid black;
+    clip-path: circle(0.0% at 100% 100%);
+    transition: clip-path .3s;
+}
+
+.title{
+    text-align: center;
+}
+
+.text{
+    text-align: center;
+}
+
+.btn{
+    margin: 30px;
+    background: none;
+    padding: 10px;
+    border: 2px solid black;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.795);
+    z-index: 11;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 530px;
+    width: 90%;
+}
+
+.logo{
+    max-width: 430px;
+    width: 100%;
+}
+
+.heading{
+    margin-top: 16px;
+}
+
+.sect-1:hover > .content{
+    clip-path: circle(141.1% at 100% 100%);
+}
+
+.sect-1:hover > .bg{
+    clip-path: circle(140.9% at 0 0);
+}
+
+.sect-1:hover{
+    z-index: 12;
+}
+// --------------------------
+.sect-2:hover > .content{
+    clip-path: circle(141.1% at 100% 100%);
+}
+
+.sect-2:hover > .bg{
+    clip-path: circle(140.9% at 0 0);
+}
+
+.sect-2:hover{
+    z-index: 12;
+}
+
+// --------------------------
+.sect-3:hover > .content{
+    clip-path: circle(141.1% at 100% 100%);
+}
+
+.sect-3:hover > .bg{
+    clip-path: circle(140.9% at 0 0);
+}
+
+.sect-3:hover{
+    z-index: 12;
+}
+// --------------------------
+.sect-4:hover > .content{
+    clip-path: circle(141.1% at 100% 100%);
+}
+
+.sect-4:hover > .bg{
+    clip-path: circle(140.9% at 0 0);
+}
+
+.sect-4:hover{
+    z-index: 12;
+}
+
+
+.bg-active{
+    clip-path: circle(140.9% at 0 0);
+}
+.content-active{
+    clip-path: circle(141.1% at 100% 100%);
+}
+.sect-active{
+    z-index: 12;
+}
+
+
+@media (max-width:236px){
+    .sect-1{
+        height: auto;
+    }
+    .sect-2{
+        height: auto;
+    }
+    .sect-3{
+        height: auto;
+    }
+    .sect-4{
+        height: auto;
+    }
+}
+
+@media (max-width:472px){
+    .group-1{
+        width: 100%;
+    }
+    .group-2{
+        width: 100%;
+    }
+}
+
+@media (max-width: 321px){
+    .heading{
+        font-size: 1.3rem;
+    }
+}
