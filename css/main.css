@@ -134,10 +134,10 @@ main {
   background-color: rgba(255, 255, 255, 0.466);
   -webkit-clip-path: circle(0.2% at 0 0);
           clip-path: circle(0.2% at 0 0);
-  -webkit-transition: -webkit-clip-path .3s;
-  transition: -webkit-clip-path .3s;
-  transition: clip-path .3s;
-  transition: clip-path .3s, -webkit-clip-path .3s;
+  -webkit-transition: -webkit-clip-path 1s;
+  transition: -webkit-clip-path 1s;
+  transition: clip-path 1s;
+  transition: clip-path 1s, -webkit-clip-path 1s;
 }
 
 .content {
@@ -162,10 +162,10 @@ main {
   border: 3px solid black;
   -webkit-clip-path: circle(0% at 100% 100%);
           clip-path: circle(0% at 100% 100%);
-  -webkit-transition: -webkit-clip-path .3s;
-  transition: -webkit-clip-path .3s;
-  transition: clip-path .3s;
-  transition: clip-path .3s, -webkit-clip-path .3s;
+  -webkit-transition: -webkit-clip-path 1s;
+  transition: -webkit-clip-path 1s;
+  transition: clip-path 1s;
+  transition: clip-path 1s, -webkit-clip-path 1s;
 }
 
 .title {

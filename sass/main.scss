@@ -91,7 +91,7 @@ main{
     height: 100%;
     background-color: rgba(255, 255, 255, 0.466);
     clip-path: circle(0.2% at 0 0);
-    transition: clip-path .3s;
+    transition: clip-path 1s;
 }
 
 .content{
@@ -106,7 +106,7 @@ main{
     height: 95%;
     border: 3px solid black;
     clip-path: circle(0.0% at 100% 100%);
-    transition: clip-path .3s;
+    transition: clip-path 1s;
 }
 
 .title{
