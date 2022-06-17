@@ -202,13 +202,13 @@ main{
 
 
 .bg-active{
-    clip-path: circle(140.9% at 0 0);
+    clip-path: circle(140.9% at 0 0) !important;
 }
 .content-active{
-    clip-path: circle(141.1% at 100% 100%);
+    clip-path: circle(141.1% at 100% 100%) !important;
 }
 .sect-active{
-    z-index: 12;
+    z-index: 12 !important;
 }
 
 
