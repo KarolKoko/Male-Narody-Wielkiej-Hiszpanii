@@ -142,7 +142,7 @@ main{
     max-width: 530px;
     width: 90%;
     overflow: hidden;
-    transition: width 1s, height 1s;
+    transition: clip-path 1s;
 }
 
 .logo{
@@ -161,10 +161,6 @@ main{
 .sect-1:hover > .bg{
     clip-path: circle(140.9% at 0 0);
 }
-
-.sect-1:hover{
-    z-index: 12;
-}
 // --------------------------
 .sect-2:hover > .content{
     clip-path: circle(141.1% at 100% 100%);
@@ -173,11 +169,6 @@ main{
 .sect-2:hover > .bg{
     clip-path: circle(140.9% at 0 0);
 }
-
-.sect-2:hover{
-    z-index: 12;
-}
-
 // --------------------------
 .sect-3:hover > .content{
     clip-path: circle(141.1% at 100% 100%);
@@ -186,10 +177,6 @@ main{
 .sect-3:hover > .bg{
     clip-path: circle(140.9% at 0 0);
 }
-
-.sect-3:hover{
-    z-index: 12;
-}
 // --------------------------
 .sect-4:hover > .content{
     clip-path: circle(141.1% at 100% 100%);
@@ -197,10 +184,6 @@ main{
 
 .sect-4:hover > .bg{
     clip-path: circle(140.9% at 0 0);
-}
-
-.sect-4:hover{
-    z-index: 12;
 }
 
 

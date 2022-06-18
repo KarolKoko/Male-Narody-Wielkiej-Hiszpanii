@@ -209,8 +209,10 @@ main {
   max-width: 530px;
   width: 90%;
   overflow: hidden;
-  -webkit-transition: width 1s, height 1s;
-  transition: width 1s, height 1s;
+  -webkit-transition: -webkit-clip-path 1s;
+  transition: -webkit-clip-path 1s;
+  transition: clip-path 1s;
+  transition: clip-path 1s, -webkit-clip-path 1s;
 }
 
 .logo {
@@ -232,10 +234,6 @@ main {
           clip-path: circle(140.9% at 0 0);
 }
 
-.sect-1:hover {
-  z-index: 12;
-}
-
 .sect-2:hover > .content {
   -webkit-clip-path: circle(141.1% at 100% 100%);
           clip-path: circle(141.1% at 100% 100%);
@@ -244,10 +242,6 @@ main {
 .sect-2:hover > .bg {
   -webkit-clip-path: circle(140.9% at 0 0);
           clip-path: circle(140.9% at 0 0);
-}
-
-.sect-2:hover {
-  z-index: 12;
 }
 
 .sect-3:hover > .content {
@@ -260,10 +254,6 @@ main {
           clip-path: circle(140.9% at 0 0);
 }
 
-.sect-3:hover {
-  z-index: 12;
-}
-
 .sect-4:hover > .content {
   -webkit-clip-path: circle(141.1% at 100% 100%);
           clip-path: circle(141.1% at 100% 100%);
@@ -272,10 +262,6 @@ main {
 .sect-4:hover > .bg {
   -webkit-clip-path: circle(140.9% at 0 0);
           clip-path: circle(140.9% at 0 0);
-}
-
-.sect-4:hover {
-  z-index: 12;
 }
 
 .bg-active {

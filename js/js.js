@@ -11,11 +11,11 @@ function resize(){
 }
 
 function sizeUp(){
-    header.style = "width: 50px; height: 50px;"
+    header.style = "clip-path: circle(10.9% at 50% 50%);"
 }
 
 function sizeDown(){
-    header.style = "width: 90%; height: auto;"
+    header.style = "clip-path: circle(114% at 50% 50%);"
     console.log("xd");
 }
 
