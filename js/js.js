@@ -2,6 +2,7 @@ const sect1 = document.querySelector(".sect-1")
 const sect2 = document.querySelector(".sect-2")
 const sect3 = document.querySelector(".sect-3")
 const sect4 = document.querySelector(".sect-4")
+const header = document.querySelector(".header")
 
 function resize(){
     sect1.style = `height: ${sect3.clientHeight}px;`
@@ -9,33 +10,25 @@ function resize(){
     sect4.style = `height: ${sect3.clientHeight}px;`
 }
 
+function sizeUp(){
+    header.style = "width: 50px; height: 50px;"
+}
 
-sect1.addEventListener("click", function(){
-    sect1.querySelector(".content").classList.toggle("content-active")
-    sect1.querySelector(".bg").classList.toggle("bg-active")
-    sect1.classList.toggle("sect-active")
-})
-
-sect2.addEventListener("click", function(){
-    sect2.querySelector(".content").classList.toggle("content-active")
-    sect2.querySelector(".bg").classList.toggle("bg-active")
-    sect2.classList.toggle("sect-active")
-})
-
-sect3.addEventListener("click", function(){
-    sect3.querySelector(".content").classList.toggle("content-active")
-    sect3.querySelector(".bg").classList.toggle("bg-active")
-    sect3.classList.toggle("sect-active")
-})
-
-sect4.addEventListener("click", function(){
-    sect4.querySelector(".content").classList.toggle("content-active")
-    sect4.querySelector(".bg").classList.toggle("bg-active")
-    sect4.classList.toggle("sect-active")
-})
-
+function sizeDown(){
+    header.style = "width: 90%; height: auto;"
+    console.log("xd");
+}
 
 window.addEventListener("resize", resize)
+sect1.addEventListener("mouseover", sizeUp)
+sect2.addEventListener("mouseover", sizeUp)
+sect3.addEventListener("mouseover", sizeUp)
+sect4.addEventListener("mouseover", sizeUp)
+
+sect1.addEventListener("mouseout", sizeDown)
+sect2.addEventListener("mouseout", sizeDown)
+sect3.addEventListener("mouseout", sizeDown)
+sect4.addEventListener("mouseout", sizeDown)
 resize()
 
 
