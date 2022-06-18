@@ -16,7 +16,6 @@ function sizeUp(){
 
 function sizeDown(){
     header.style = "clip-path: circle(114% at 50% 50%);"
-    console.log("xd");
 }
 
 window.addEventListener("resize", resize)
@@ -30,6 +29,57 @@ sect2.addEventListener("mouseout", sizeDown)
 sect3.addEventListener("mouseout", sizeDown)
 sect4.addEventListener("mouseout", sizeDown)
 resize()
+
+
+
+
+
+
+
+
+sect1.addEventListener("click", function(){
+    sect1.querySelector(".bg").classList.add("bg-active")
+    sect1.querySelector(".content").classList.add("bg-active")
+    header.classList.add("sect-active")
+    setTimeout(function(){
+        sect1.querySelector(".bg").classList.remove("bg-active")
+        sect1.querySelector(".content").classList.remove("bg-active")
+        header.classList.remove("sect-active")
+    }, 6000)
+})
+
+sect2.addEventListener("click", function(){
+    sect2.querySelector(".bg").classList.add("bg-active")
+    sect2.querySelector(".content").classList.add("bg-active")
+    header.classList.add("sect-active")
+    setTimeout(function(){
+        sect2.querySelector(".bg").classList.remove("bg-active")
+        sect2.querySelector(".content").classList.remove("bg-active")
+        header.classList.remove("sect-active")
+    }, 8000)
+})
+
+sect3.addEventListener("click", function(){
+    sect3.querySelector(".bg").classList.add("bg-active")
+    sect3.querySelector(".content").classList.add("bg-active")
+    header.classList.add("sect-active")
+    setTimeout(function(){
+        sect3.querySelector(".bg").classList.remove("bg-active")
+        sect3.querySelector(".content").classList.remove("bg-active")
+        header.classList.remove("sect-active")
+    }, 17000)
+})
+
+sect4.addEventListener("click", function(){
+    sect4.querySelector(".bg").classList.add("bg-active")
+    sect4.querySelector(".content").classList.add("bg-active")
+    header.classList.add("sect-active")
+    setTimeout(function(){
+        sect4.querySelector(".bg").classList.remove("bg-active")
+        sect4.querySelector(".content").classList.remove("bg-active")
+        header.classList.remove("sect-active")
+    }, 4000)
+})
 
 
 

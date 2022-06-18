@@ -275,7 +275,8 @@ main {
 }
 
 .sect-active {
-  z-index: 12 !important;
+  -webkit-clip-path: circle(10.9% at 50% 50%) !important;
+          clip-path: circle(10.9% at 50% 50%) !important;
 }
 
 @media (max-width: 236px) {
