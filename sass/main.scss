@@ -153,13 +153,24 @@ main{
     transition: clip-path 1s;
 }
 
+.logo-small{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65px;
+    transition: opacity 1s;
+}
+
 .logo{
     max-width: 430px;
     width: 100%;
+    transition: opacity 1s;
 }
 
 .heading{
     margin-top: 16px;
+    transition: opacity 1s;
 }
 
 .sect-1:hover > .content{

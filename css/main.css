@@ -223,13 +223,28 @@ main {
   transition: clip-path 1s, -webkit-clip-path 1s;
 }
 
+.logo-small {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 65px;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
 .logo {
   max-width: 430px;
   width: 100%;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 .heading {
   margin-top: 16px;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 .sect-1:hover > .content {
