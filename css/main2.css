@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -11,9 +12,16 @@ html {
   font-size: 62.5%;
 }
 
+@font-face {
+  font-family: 'Museo';
+  src: local("☺"), url("../font/Museo/300.otf") format("opentype"), url("../font/Museo/300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-size: 1.6rem;
-  font-family: 'Merriweather', serif;
+  font-family: 'Museo', serif;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,6 +39,16 @@ body {
   background-image: url("../img/news-hero-bg.jpg");
   background-position: center;
   background-size: cover;
+}
+
+.back-home-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .bg {
@@ -62,6 +80,10 @@ body {
   max-width: 1000px;
   min-width: 200px;
   margin: 10px 0;
+}
+
+.mt {
+  margin-top: 30px;
 }
 
 .header {

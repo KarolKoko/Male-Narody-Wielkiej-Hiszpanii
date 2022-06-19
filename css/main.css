@@ -302,6 +302,16 @@ main {
           clip-path: circle(10.9% at 50% 50%) !important;
 }
 
+.btn-group {
+  margin-top: 30px;
+}
+
+.btn-sm {
+  border: none;
+  background: none;
+  font-size: 3rem;
+}
+
 @media (max-width: 236px) {
   .sect-1 {
     height: auto;
