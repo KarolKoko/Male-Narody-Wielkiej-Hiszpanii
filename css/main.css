@@ -202,7 +202,10 @@ main {
           transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.795);
   z-index: 11;
-  padding: 50px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,6 +313,14 @@ main {
   border: none;
   background: none;
   font-size: 3rem;
+}
+
+.logo-group {
+  margin-top: 10px;
+}
+
+.logo-group__logo {
+  width: 80px;
 }
 
 @media (max-width: 236px) {
